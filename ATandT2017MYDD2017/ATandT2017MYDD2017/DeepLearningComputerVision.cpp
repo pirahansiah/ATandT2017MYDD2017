@@ -15,6 +15,8 @@ Sample of using OpenCV dnn module with Tensorflow Inception model.
 using namespace cv;
 using namespace cv::dnn;
 
+
+
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
@@ -89,7 +91,7 @@ int main(int argc, char **argv)
 
 											//! [Prepare blob]
 	Mat img;
-	VideoCapture cap(1);
+	VideoCapture cap(0);
 	for (int i = 0; i < 123; i++)
 	{
 
