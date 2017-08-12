@@ -63,7 +63,7 @@ void get_Website(char *url)
 
 	SockAddr.sin_port = htons(80);
 	SockAddr.sin_family = AF_INET;
-	SockAddr.sin_addr.s_addr = *((unsigned long*)host->h_addr);
+//	SockAddr.sin_addr.s_addr = *((unsigned long*)host->h_addr);
 
 	cout << "Connecting to " << url << " ...\n";
 
@@ -136,7 +136,6 @@ int main(int argc, char **argv)
 		parser.printErrors();
 		return 0;
 	}
-
 	cv::String classNamesFile = "C:/opencv33/FarshidPirahanSiah/FarshidPirahanSiah/imagenet_comp_graph_label_strings.txt";   //parser.get<String>("c_names");
 	cv::String resultFile = parser.get<cv::String>("result");
 
