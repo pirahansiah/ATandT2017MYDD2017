@@ -8,6 +8,7 @@
 /*
 Sample of using OpenCV dnn module with Tensorflow Inception model.
 */
+// Farshid Pirahansiah
 
 #include <opencv2/dnn.hpp>
 #include <opencv2/imgproc.hpp>
